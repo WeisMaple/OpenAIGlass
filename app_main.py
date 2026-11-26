@@ -56,7 +56,7 @@ from dashscope import audio as dash_audio  # 若未安装，会在原项目里�
 
 print("Step 3: Checking API KEY")
 
-API_KEY = os.getenv("DASHSCOPE_API_KEY", "sk-a9440db694924559ae4ebdc2023d2b9a")
+API_KEY = os.getenv("DASHSCOPE_API_KEY")
 if not API_KEY:
     raise RuntimeError("未设置 DASHSCOPE_API_KEY")
 
